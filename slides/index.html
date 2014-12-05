@@ -20,7 +20,9 @@
     <script src="//gnab.github.io/remark/downloads/remark-latest.min.js">
     </script>
     <script>
-      var slideshow = remark.create({sourceUrl: 'kakai20141205.md'});
+      var gistId = window.location.search.substring(1) || '605820a5850b021b9101';
+      var domain = 'https://gist.githubusercontent.com/cohei/'
+      var slideshow = remark.create({sourceUrl: domain + gistId + '/raw'});
     </script>
   </body>
 </html>
