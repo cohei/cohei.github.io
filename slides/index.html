@@ -24,10 +24,10 @@
     </style>
   </head>
   <body>
-    <script src="//gnab.github.io/remark/downloads/remark-latest.min.js"></script>
+    <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
     <script type="text/javascript">
       var hljs = remark.highlighter.engine;
-  
+
       var domain = 'https://gist.githubusercontent.com/cohei/'
       var gistId = window.location.search.substring(1) || '605820a5850b021b9101';
       var slideshow = remark.create({
@@ -36,18 +36,13 @@
         highlightLanguage: 'remark'
       });
     </script>
-    <script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML&delayStartupUntil=configured" type="text/javascript"></script>
-    <script type="text/javascript">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-MML-AM_CHTML" type="text/javascript"></script>
+    <script type="text/x-mathjax-config">
       // Setup MathJax
       MathJax.Hub.Config({
         tex2jax: {
           skipTags: ['script', 'noscript', 'style', 'textarea', 'pre']
         }
-      });
-      MathJax.Hub.Queue(function() {
-        $(MathJax.Hub.getAllJax()).map(function(index, elem) {
-          return(elem.SourceElement());
-        }).parent().addClass('has-jax');
       });
 
       MathJax.Hub.Configured();
